@@ -26,13 +26,13 @@
 
 ```shell
 docker run -d \
-  --name ttdybridge \
+  --name ttydbridge \
   -e PORT=2222 \
   -v /opt:/opt \
   --pid host \
   --privileged \
   --restart unless-stopped \
-  cp0204/ttdybridge:latest
+  cp0204/ttydbridge:latest
 ```
 
 通过 `http://yourhost:2222` 访问网页终端，使用系统用户登录。
