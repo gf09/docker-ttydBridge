@@ -26,13 +26,13 @@ Run the container:
 
 ```shell
 docker run -d \
-  --name ttdybridge \
+  --name ttydbridge \
   -e PORT=2222 \
   -v /opt:/opt \
   --pid host \
   --privileged \
   --restart unless-stopped \
-  cp0204/ttdybridge:latest
+  cp0204/ttydbridge:latest
 ```
 
 Access the web terminal via `http://yourhost:2222` and login with your system user.
